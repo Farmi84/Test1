@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static Scanner scanner = new Scanner(System.in);
 
-        Scanner scanner = new Scanner(System.in);
-
+    public static void createUser() {
         System.out.println("Podaj imię: ");
         String name = scanner.nextLine();
         System.out.println("Podaj nazwisko");
@@ -17,7 +16,10 @@ public class Main {
         User user = new User(name, lastName, age);
 
         System.out.println(user);
+    }
 
+    public static void main(String[] args) {
 
+        createUser();
     }
 }
