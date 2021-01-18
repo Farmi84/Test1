@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
+    static Scanner scanner = new Scanner(System.in);
 
-        Scanner scanner = new Scanner(System.in);
-
+    public static void createUser() {
         System.out.println("Podaj pierwszą liczbę");
         int a = scanner.nextInt();
         System.out.println("Podaj drugą liczbę");
@@ -17,6 +15,13 @@ public class Main {
         System.out.println("a - b = " + Calculator.subtract(a, b));
         System.out.println("a * b = " + Calculator.multiply(a, b));
         System.out.println("a / b = " + Calculator.divide(a, b));
+    }
+
+    public static void main(String[] args) {
+        // write your code here
+
+        createUser();
+
 
     }
 }
